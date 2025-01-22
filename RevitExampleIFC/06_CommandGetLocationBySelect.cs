@@ -22,7 +22,6 @@ namespace RevitExampleIFC
 
             Reference elementRef = null;
 
-
             try
             {
                 while(true)
