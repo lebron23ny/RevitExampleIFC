@@ -31,13 +31,25 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Autodesk.IFC.Export.UI">
+      <HintPath>..\..\..\..\..\..\..\Desktop\библиотеки\RevitAPI\2022\Autodesk.IFC.Export.UI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="RevitAPI">
       <HintPath>..\..\..\..\..\..\..\Desktop\библиотеки\RevitAPI\2022\RevitAPI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="RevitAPIIFC">
+      <HintPath>..\..\..\..\..\..\..\Desktop\библиотеки\RevitAPI\2022\RevitAPIIFC.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="RevitAPIUI">
       <HintPath>..\..\..\..\..\..\..\Desktop\библиотеки\RevitAPI\2022\RevitAPIUI.dll</HintPath>
+      <Private>False</Private>
     </Reference>
-    <Reference Include="System" />
+    <Reference Include="System">
+      <Private>False</Private>
+    </Reference>
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -54,6 +66,9 @@
     <Compile Include="01_CommandInsertIFC.cs" />
     <Compile Include="05_CommandMoveIFCbyPath.cs" />
     <Compile Include="04_CommandMoveAndRotateIFCbySelect.cs" />
+    <Compile Include="07_Command_ExportIFC.cs" />
+    <Compile Include="08_Command_ExportIFC_by_SetupName.cs" />
+    <Compile Include="09_Command_ExportIFC_by_ActiveView.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
